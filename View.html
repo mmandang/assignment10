@@ -1,0 +1,13 @@
+<div>
+
+  <section class='comment-input'>
+    <p>Add Your Comment:</p>
+    <input type="text" data-ng-model = "newComment.dt"/>
+    <button data-ng-click="addComment()" data-ng-keypress="$event.which === 13 && addComment()">+</button>
+  </section>
+
+  <section class='comments'>
+    <p data-ng-repeat="c in comments"> {{ c }} </p>
+  </section>
+
+</div>

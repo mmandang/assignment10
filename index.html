@@ -1,0 +1,43 @@
+<!doctype html>
+<html data-ng-app="demoApp">
+  <head>
+    <title>A Simple App</title>
+
+    <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>Comments</h1>
+      <p>A simple app that allows a user to input comments</p>
+    </header>
+
+ <!--    <main data-ng-controller="SimpleController">
+
+      <section class='comment-input'>
+        <p>Add Your Comment:</p>
+        <input type="text" data-ng-model = "newComment.dt"/>
+	    <button data-ng-click="addComment()" 
+	  		 	ng-keydown="$event.which === 13 && addComment()">+</button>
+      </section>
+
+      <section class='comments'>
+        <p data-ng-repeat="c in comments"> {{ c }} </p>
+      </section>
+
+    </main> -->
+
+
+    <main>
+    	<div data-ng-view></div>
+    </main>
+
+    <footer>
+      <p>this work is released into the public domain</p>
+    </footer>
+
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+
+  </body>
+</html>
